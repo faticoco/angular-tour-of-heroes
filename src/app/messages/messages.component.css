@@ -17,3 +17,20 @@ h2 {
     color: white;
     background-color: #42545C;
   }
+
+
+  .back_class
+  {
+    padding: 0;
+    margin: auto;
+    max-width: 1000px;
+  
+    /* flexbox */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: flex-start;
+    align-self: auto;
+  }

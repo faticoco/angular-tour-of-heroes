@@ -1,5 +1,9 @@
+<div>
 
-<div *ngIf="selected_hero">
+  <button type="button" (click)="goBack()">Back</button> 
+</div>
+<div class="back_class">
+<div *ngIf="selected_hero" >
     <h2>{{selected_hero.name | uppercase}} Details</h2>
     <div>id: {{selected_hero.id}}</div>
     <div>
@@ -7,3 +11,7 @@
       <input id="hero-name" [(ngModel)]="selected_hero.name" placeholder="name">
     </div>
   </div>
+  <button type="button" (click)="save()">save</button>
+</div>
+
+  

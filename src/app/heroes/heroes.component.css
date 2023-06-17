@@ -3,64 +3,81 @@
   margin: 0 2em 0 0;
   list-style-type: none;
   padding: 0;
-  width: 15em;
+  width: 100%;
+  align-self: center;
+  justify-content: space-around;
+
+ align-self: auto;
 }
 
 .heroes li {
   display: flex;
 }
 
-.heroes button {
-  flex: 1;
-  cursor: pointer;
-  position: relative;
-  left: 0;
-  background-color: #EEE;
-  margin: .5em;
-  padding: 0;
-  border-radius: 4px;
-  display: flex;
-  align-items: stretch;
-  height: 2.0em;
-}
 
-.heroes button:hover {
-  color: #97f9f9;
-  background-color: #e6e6e6;
-  left: .1em;
-}
-
-.heroes button:active {
-  background-color: #a6fff9;
-  color: #fafafa;
-}
-
-.heroes button.selected {
-  background-color: rgb(145, 210, 210);
-  color: white;
-}
-
-.heroes button:hover {
-  background-color: #a7faec;
-  color: rgb(5, 17, 17);
-}
-
-.heroes button.selected:active {
-  background-color: rgb(11, 213, 228);
-  color: rgb(22, 144, 144);
-}
-
-.heroes .badge {
-  display: inline-block;
-  font-size: small;
-  color: white;
-  padding: 0.8em 0.7em 0 0.7em;
-  background-color: #35d7d7;
-  line-height: 1em;
-  margin-right: .8em;
-  border-radius: 4px 0 0 4px;
-}
 
 .heroes .name {
   align-self: center;
+}
+
+
+
+a {
+  background-color: #71f4ed;
+  border-radius: 2px;
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: inline-block;
+  color: #0c4f4e;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+
+  /* flexbox */
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+
+
+
+button {
+  background-color: #71f4ed;
+  border-radius: 2px;
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  width: 10%;
+  min-width: 70px;
+  margin: .5rem auto;
+  box-sizing: border-box;
+
+  /* flexbox */
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+
+.heroes_search
+{
+   padding: 0;
+   
+    max-width: 100%;
+  
+    /* flexbox */
+  
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: flex-start;
+    align-self: auto;
+  
+
+}
+a:hover {
+  background-color: #2ae3ff;
 }

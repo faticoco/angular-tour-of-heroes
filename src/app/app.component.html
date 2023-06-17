@@ -1,5 +1,9 @@
-<div position=" center"><h1>{{title}}</h1></div>
+<h1><b>{{title}}</b></h1>
+<nav>
+  <a routerLink="/dashboard">Dashboard</a>
 
-<app-heroes></app-heroes>
+  <a routerLink="/heroes">Heroes</a>
+  </nav>
+<router-outlet></router-outlet>
 <app-messages></app-messages>
 
